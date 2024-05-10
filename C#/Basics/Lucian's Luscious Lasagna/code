@@ -1,0 +1,18 @@
+class Lasagna
+{
+    public  int ExpectedMinutesInOven(){
+        return 40;
+    }
+
+    public  int RemainingMinutesInOven(int timeRemaining){
+        return 40-timeRemaining;
+    }
+
+    public  int PreparationTimeInMinutes(int layers){
+        return 2*layers;
+    }
+    public  int ElapsedTimeInMinutes(int layers,int numberOfMinutes){
+        int prepared = PreparationTimeInMinutes(layers);
+        return prepared + numberOfMinutes;
+    }
+}
